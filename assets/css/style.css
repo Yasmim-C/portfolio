@@ -31,7 +31,18 @@ section { padding:72px 0; }
 .card-number { font-size:.9rem; font-weight:700; }
 .card h3 { margin:48px 0 8px; font-size:1.5rem; }
 .card p { margin:0; }
+.project-featured { grid-column:1/-1; min-height:auto; }
+.project-heading { display:flex; align-items:center; justify-content:space-between; gap:16px; }
+.project-status { padding:7px 11px; border:1px solid rgba(94,229,255,.28); border-radius:999px; color:var(--accent); font-size:.78rem; font-weight:700; background:rgba(94,229,255,.08); }
+.project-featured h3 { margin:28px 0 12px; font-size:clamp(1.8rem,4vw,2.5rem); }
+.project-featured > p { max-width:760px; }
+.project-highlights { display:grid; grid-template-columns:repeat(3,1fr); gap:12px; margin:26px 0; padding:0; list-style:none; }
+.project-highlights li { padding:15px; border-left:2px solid var(--accent); color:var(--muted); line-height:1.5; background:rgba(94,229,255,.04); }
+.project-tech { display:flex; flex-wrap:wrap; gap:8px; margin:0 0 28px; padding:0; list-style:none; }
+.project-tech li { padding:7px 10px; border:1px solid var(--border); border-radius:999px; color:var(--muted); font-size:.82rem; }
+.project-link { display:inline-flex; align-items:center; gap:8px; font-weight:700; text-decoration:none; }
+.project-link:hover { color:var(--text); }
 .contact { margin-bottom:72px; padding:42px; border:1px solid var(--border); border-radius:28px; text-align:center; background:var(--surface); }
 .contact a { font-weight:700; text-decoration:none; }
 footer { padding:24px 0 40px; color:var(--muted); font-size:.9rem; text-align:center; }
-@media (max-width:720px) { header{padding-top:20px} nav{gap:13px} .hero{grid-template-columns:1fr;gap:28px;padding-top:44px} .portrait{min-height:220px} .portrait div{width:130px;height:130px;font-size:3rem} .skills-grid,.projects{grid-template-columns:1fr} .contact{padding:32px 22px} }
+@media (max-width:720px) { header{padding-top:20px} nav{gap:13px} .hero{grid-template-columns:1fr;gap:28px;padding-top:44px} .portrait{min-height:220px} .portrait div{width:130px;height:130px;font-size:3rem} .skills-grid,.projects,.project-highlights{grid-template-columns:1fr} .contact{padding:32px 22px} }
