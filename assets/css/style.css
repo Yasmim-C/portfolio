@@ -21,6 +21,11 @@ h1 em { color:var(--accent); font-style:normal; }
 section { padding:72px 0; }
 .section-title { margin:0 0 12px; font-size:clamp(2rem,5vw,3.25rem); letter-spacing:-.06em; }
 .section-intro { max-width:600px; margin:0; }
+.skills-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:18px; margin-top:36px; }
+.skill-group { padding:28px; border:1px solid var(--border); border-radius:22px; background:var(--surface); }
+.skill-group h3 { margin:0 0 20px; font-size:1.3rem; }
+.skill-group ul { display:flex; flex-wrap:wrap; gap:10px; margin:0; padding:0; list-style:none; }
+.skill-group li { padding:8px 12px; border:1px solid rgba(94,229,255,.28); border-radius:999px; color:var(--accent); font-size:.95rem; background:rgba(94,229,255,.08); }
 .projects { display:grid; grid-template-columns:repeat(2,1fr); gap:18px; margin-top:36px; }
 .card { min-height:220px; padding:28px; border:1px solid var(--border); border-radius:22px; background:var(--surface); backdrop-filter:blur(12px); }
 .card-number { font-size:.9rem; font-weight:700; }
@@ -29,4 +34,4 @@ section { padding:72px 0; }
 .contact { margin-bottom:72px; padding:42px; border:1px solid var(--border); border-radius:28px; text-align:center; background:var(--surface); }
 .contact a { font-weight:700; text-decoration:none; }
 footer { padding:24px 0 40px; color:var(--muted); font-size:.9rem; text-align:center; }
-@media (max-width:720px) { header{padding-top:20px} nav{gap:13px} .hero{grid-template-columns:1fr;gap:28px;padding-top:44px} .portrait{min-height:220px} .portrait div{width:130px;height:130px;font-size:3rem} .projects{grid-template-columns:1fr} .contact{padding:32px 22px} }
+@media (max-width:720px) { header{padding-top:20px} nav{gap:13px} .hero{grid-template-columns:1fr;gap:28px;padding-top:44px} .portrait{min-height:220px} .portrait div{width:130px;height:130px;font-size:3rem} .skills-grid,.projects{grid-template-columns:1fr} .contact{padding:32px 22px} }
