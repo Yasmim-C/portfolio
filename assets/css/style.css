@@ -666,6 +666,14 @@ section {
   color: var(--text);
 }
 
+.contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px 24px;
+  margin-top: 24px;
+}
+
 
 /* =========================================================
    FOOTER
